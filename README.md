@@ -2,8 +2,8 @@
 This repo base on [react-boilerplate-thunk](https://github.com/NoahZhang/react-boilerplate-thunk "NoahZhang").  
 Remove the redux, use [mobx](https://mobxjs.github.io/mobx/) to manage.  
    
-The first step is to perform `npm install` command to install dependent libraries  
-The second step, executing `npm run start` command to start the program  
+The first step  `npm install`  
+The second step `npm run start`  
 Open [localhost:8080](http://localhost:8080) with Chrome mobile debug mode   
 
 ## Update Log
