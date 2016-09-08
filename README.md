@@ -1,6 +1,6 @@
 # react-mobx
 This repo base on [react-boilerplate-thunk](https://github.com/NoahZhang/react-boilerplate-thunk "NoahZhang").  
-Remove the redux, use [mobx](https://mobxjs.github.io/mobx/) to manage.  
+Use [mobx](https://mobxjs.github.io/mobx/) to manage store.  
    
 The first step  `npm install`  
 The second step `npm run start`  
