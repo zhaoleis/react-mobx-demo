@@ -1,12 +1,13 @@
 # react-mobx
-基于 [react-boilerplate-thunk](https://github.com/NoahZhang/react-boilerplate-thunk "NoahZhang")  
-去掉了redux，用mobx来管理
-  
-执行 `npm install` 安装依赖包  
-安装完之后 直接执行 `npm run start`  
-浏览器打开 [localhost:8080](http://localhost:8080) 就能看到页面了  
+This repo base on [react-boilerplate-thunk](https://github.com/NoahZhang/react-boilerplate-thunk "NoahZhang").  
+Remove the redux, use [mobx](https://mobxjs.github.io/mobx/) to manage.  
+   
+The first step is to perform `npm install` command to install dependent libraries  
+The second step, executing `npm run start` command to start the program  
+Open [localhost:8080](http://localhost:8080) with Chrome   
 
-## 更新日志
-2016-06-22 添加路由跳转功能  
-2016-07-11 路由优化，配置文件优化  
-2016-08-06 添加eslint
+## Update Log
+2016-06-22 add react-router  
+2016-07-11 fix bug    
+2016-08-06 add eslint  
+2016-09-08 add mobx replacement redux
