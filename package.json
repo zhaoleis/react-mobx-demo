@@ -1,13 +1,13 @@
 {
-  "name": "gulp-react",
+  "name": "react－mobx-demo",
   "version": "1.0.0",
-  "description": "gulp react less redux es6 种子项目",
-  "main": "index.js",
+  "description": "react mobx demo",
+  "main": "main.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --devtool eval --progress --hot --colors --content-base app"
   },
-  "author": "",
+  "author": "zhaoleis",
   "license": "ISC",
   "dependencies": {
     "mobx": "^2.4.2",
