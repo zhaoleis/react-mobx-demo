@@ -1,0 +1,24 @@
+{
+  "env": {
+    "node": true
+  },
+  ecmaFeatures: {
+    jsx: true
+  },
+  "globals": {
+  },
+  "plugins": [
+  ],
+  "extends": "eslint-config-airbnb",
+  "rules": {
+    "comma-dangle": 0,
+    "no-console": 0,
+    "id-length": 0,
+    "react/prop-types": 0,
+    "semi":0,
+    "max-len":0,
+    "react/jsx-closing-bracket-location":0,
+    "no-script-url":0,
+    "react/jsx-no-bind":0
+  }
+}
