@@ -14,7 +14,7 @@ export default class Welcome extends Component {
   }
   clickMe() {
     const {_publish} = this.props
-    _publish.type = '广告'
+    _publish.type = 'AD'
     _publish.title = ''
     _publish.content = ''
     _publish.id = null
@@ -36,9 +36,9 @@ export default class Welcome extends Component {
       <div className="container">
         <section className="jumbotron">
           <div style={{ padding: '24px 0' }} />
-          {_publish.addSuccess ? <h3 className="jumbotron-heading">哇，添加成功</h3> : <h3></h3>}
+          {_publish.addSuccess ? <h3 className="jumbotron-heading">Add Access</h3> : <h3></h3>}
           <div style={{ padding: '24px 0' }} />
-          <CellsTitle className="leftbody">列表</CellsTitle>
+          <CellsTitle className="leftbody">List</CellsTitle>
           <Cells access>
             {_publish.publishData.map((item, index) => {
               const updateData = this.updateData.bind(this, item.id)
@@ -54,7 +54,7 @@ export default class Welcome extends Component {
             }
           </Cells>
           <ButtonArea>
-            <Button onClick={this.click}>点我继续添加</Button>
+            <Button onClick={this.click}>To Add</Button>
           </ButtonArea>
         </section>
       </div>

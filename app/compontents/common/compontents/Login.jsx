@@ -17,21 +17,21 @@ export default class Login extends Component {
       showType: false,
       menus: [
         {
-          label: '广告',
-          onClick: this.hideType.bind(this, '广告')
+          label: 'AD',
+          onClick: this.hideType.bind(this, 'AD')
         }, {
-          label: '出租',
-          onClick: this.hideType.bind(this, '出租')
+          label: 'Rent',
+          onClick: this.hideType.bind(this, 'Rent')
         }, {
-          label: '出售',
-          onClick: this.hideType.bind(this, '出售')
+          label: 'Sell',
+          onClick: this.hideType.bind(this, 'Sell')
         },
       ],
       alert: {
-        title: '标题标题',
+        title: 'my title',
         buttons: [
           {
-            label: '好的',
+            label: 'ok',
             onClick: this.onHideAlert.bind(this)
           }
         ]
@@ -64,11 +64,11 @@ export default class Login extends Component {
   onPublish() {
     const { _publish } = this.props
     if (_publish.title.length === 0) {
-      console.log('标题不能为空')
+      console.log('title not empty')
       return
     }
     if (_publish.content.length === 0) {
-      console.log('内容不能为空')
+      console.log('content not empty')
       return
     }
     if (_publish.id) {
@@ -114,30 +114,30 @@ export default class Login extends Component {
 
     return (
       <div className="container">
-        <h1 className="title">我要发布</h1>
-        <CellsTitle>类别</CellsTitle>
+        <h1 className="title">I wan't push</h1>
+        <CellsTitle>Type</CellsTitle>
         <Cells access>
           <Cell>
             <CellBody onClick={this.onShowType}>
-              {_publish.type ? _publish.type : '广告'}
+              {_publish.type ? _publish.type : 'AD'}
             </CellBody>
           </Cell>
         </Cells>
-        <CellsTitle>标题</CellsTitle>
+        <CellsTitle>Title</CellsTitle>
         <Cells>
           <Cell>
-            <CellBody><Input placeholder="请输入标题" value={_publish.title} onChange={this.onTitleChange} /></CellBody>
+            <CellBody><Input placeholder="enter title" value={_publish.title} onChange={this.onTitleChange} /></CellBody>
           </Cell>
         </Cells>
-        <CellsTitle>内容</CellsTitle>
+        <CellsTitle>Content</CellsTitle>
         <Cells>
           <Cell>
-            <CellBody><TextArea row="3" placeholder="请输入内容" maxlength="200" value={_publish.content} onChange={this.onContentChange} /></CellBody>
+            <CellBody><TextArea row="3" placeholder="enter content" maxlength="200" value={_publish.content} onChange={this.onContentChange} /></CellBody>
           </Cell>
         </Cells>
         <div style={{ margin: '24px 0' }} />
         <ButtonArea>
-          <Button onClick={this.onPublish}>点我发布</Button>
+          <Button onClick={this.onPublish}>Pushing</Button>
         </ButtonArea>
         <ActionSheet menus={this.state.menus} actions={this.state.actions} show={this.state.showType} onRequestClose={this.hideType} />
         <Alert title={this.state.alert.title} buttons={this.state.alert.buttons} show={this.state.showConfirm} />

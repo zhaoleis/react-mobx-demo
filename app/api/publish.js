@@ -1,6 +1,6 @@
 const publishDB = [
-  { type: '广告', title: '卖木耳', content: '新鲜的木耳联系我，13222211111', id: 1 },
-  { type: '出租', title: '2室1厅出租', content: '1号楼两室一厅出租，年付可优惠', id: 2 },
+  { type: 'AD', title: 'Sell House', content: 'big house ,cheap ,good', id: 1 },
+  { type: 'Rent', title: 'Rent Car', content: 'big car ,cheap ,good', id: 2 },
 ]
 
 export function addPublish(type, title, content) {
@@ -10,6 +10,7 @@ export function addPublish(type, title, content) {
     res({ success: true });
   });
 }
+
 export function updatePublish(id, type, title, content) {
   return new Promise((res) => {
     publishDB[id - 1].type = type

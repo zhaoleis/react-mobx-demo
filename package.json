@@ -1,11 +1,11 @@
 {
-  "name": "react－mobx-demo",
+  "name": "react-mobx-demo",
   "version": "1.0.0",
   "description": "react mobx demo",
   "main": "main.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --devtool eval --progress --hot --colors --content-base app"
+    "start": "webpack-dashboard -- webpack-dev-server --devtool eval --progress --hot --colors --content-base app"
   },
   "author": "zhaoleis",
   "license": "ISC",
@@ -22,26 +22,27 @@
     "weui": "^0.4.3"
   },
   "devDependencies": {
-    "css-loader": "^0.23.1",
-    "file-loader": "^0.9.0",
-    "less-loader": "^2.2.3",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
     "babel-core": "^6.9.1",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.13.0",
+    "css-loader": "^0.23.1",
     "eslint": "^3.2.2",
     "eslint-config-airbnb": "^10.0.0",
     "eslint-plugin-import": "^1.12.0",
     "eslint-plugin-jsx-a11y": "^2.0.1",
     "eslint-plugin-react": "^6.0.0",
     "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.21.0",
     "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "style-loader": "^0.13.1",
     "superagent": "^2.2.0",
+    "url-loader": "^0.5.7",
+    "webpack-dashboard": "^0.1.8",
     "webpack-dev-server": "^1.15.1"
   }
 }
